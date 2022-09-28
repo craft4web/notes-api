@@ -1,13 +1,10 @@
 // const http = require('http')
 const express = require('express')
 const app = express()
-const logger = require('./logger.js')
 const cors = require('cors')
 
 app.use(cors())
 app.use(express.json())
-
-app.use(logger)
 
 let notes = [
   {
